@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  ide:
+    build: .
+    container_name: cloud9
+    ports:
+      - '5050:5050'
+      - '8080:8080'
+      - '8081:8081'
+      - '8082:8082'
