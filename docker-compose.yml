@@ -3,6 +3,7 @@ version: '3.7'
 services:
   ide:
     build: .
+    image: c9_ide
     container_name: cloud9
     ports:
       - '5050:5050'
