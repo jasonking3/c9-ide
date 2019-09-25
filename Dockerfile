@@ -1,4 +1,4 @@
-# Replace cloud9/ws-php with any existing Ubuntu-based Docker image ID you want.
+# Replace with any existing Ubuntu-based Docker image ID you want.
 FROM ubuntu:18.04
 
 # Use UTF-8
