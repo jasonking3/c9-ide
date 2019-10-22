@@ -7,7 +7,7 @@ Tooling to build and run the core Cloud9 IDE in a Docker container.
 Example using docker:
 
 ```
-docker run -d -p 5050:5050 -p 8080:8080 -p 8081:8081 -p 8082:8082 -v "$(pwd)"/workspace:/root/workspace jasonking/c9_ide:latest
+docker run -d -p 5050:5050 -p 8080:8080 -p 8081:8081 -p 8082:8082 -v "$(pwd)"/workspace:/root/workspace jasonking/c9-ide:latest
 ```
 
 Example using docker-compose:
