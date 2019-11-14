@@ -1,4 +1,4 @@
-# c9_ide
+# c9-ide
 
 Tooling to build and run the core Cloud9 IDE in Docker and Vagrant.
 
