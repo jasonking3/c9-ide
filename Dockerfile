@@ -6,7 +6,17 @@ ENV LANG C.UTF-8
 
 # Install requirements
 RUN apt-get update && \
-	apt-get install curl git python nodejs build-essential -y
+	apt-get install -y \
+    curl \
+    git \
+    python \
+    python-pip \
+    virtualenv \
+    python3 \
+    python3-pip \
+    python3-venv \
+    nodejs \
+    build-essential
 
 # Populate environment variables that are required by Cloud9 Core.
 RUN echo "export USER=root\n\

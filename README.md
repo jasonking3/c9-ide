@@ -1,8 +1,10 @@
 # c9_ide
 
-Tooling to build and run the core Cloud9 IDE in a Docker container.
+Tooling to build and run the core Cloud9 IDE in Docker and Vagrant.
 
 ## Usage
+
+All of the examples below will expose the Cloud9 IDE on port 5050.  Point your browser to `http://localhost:5050`
 
 Example using docker:
 
@@ -18,6 +20,9 @@ cd c9_ide
 docker-compose up -d
 ```
 
-Access the Cloud9 IDE via browser at `http://localhost:5050`.
+> Note: These Docker examples bind-mount the `./workspace` directory on the host to the `/root/workspace` in the container. This allows the workspace to survive a restart of the container, but it may not work well on Windows due to differences between Windows and Linux filesystem permissions.
 
-> Note: These examples bind-mount the `./workspace` directory on the host to the `/root/workspace` in the container. This allows the workspace to survive a restart of the container.
+Example using vagrant:
+```
+vagrant up
+```
